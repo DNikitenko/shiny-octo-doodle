@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Supersite registration form</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <h1>Registration form</h1>
+        <table width="40%">
+            <tr>
+                <td>
+                    <form action="super-handler.asp" method="POST" enctype="multipart/form-data">
+                        <fieldset>
+                            <legend>Be super - join us!</legend>
+                            <ol>
+                                <li>
+                                    <p><b>Registration info</b></p>
+                                    <table width="100%">
+                                        <col width="45%">
+                                        <col width="55%">
+                                        
+                                        <tr>
+                                            <td><label for="login" accesskey="l">Login:</label></td>
+                                            <td><input id="login" type="text" name="login"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="password" accesskey="p">Password:</label></td>
+                                            <td><input id="password" type="password" name="password"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="confirmPassword">Confirm password:</label></td>
+                                            <td><input id="confirmPassword" type="password" name="confirmPassword"></td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <p><b>Personal information</b></p>
+                                    <table width="100%">
+                                        <col width="45%">
+                                        <col width="55%">
+                                        
+                                        <tr>
+                                            <td><label for="email" accesskey="e">Email:</label></td>
+                                            <td><input id="email" type="text" name="email"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label for="country" accesskey="c">Country:</label></td>
+                                            <td>
+                                                <select id="country" name="country">
+                                                    <optgroup label="Africa">
+                                                        <option value="AL" label="Algeria"></option>
+                                                        <option value="UG" label="Uganda"></option>
+                                                    </optgroup>
+                                                    <optgroup label="Antarctica" disabled>
+                                                        <option value="" label="There're no countries!"></option>
+                                                    </optgroup>
+                                                    <optgroup label="Australia">
+                                                        <option value="AU" label="Australia"></option>
+                                                        <option value="ID" label="Indonesia"></option>
+                                                        <option selected value="RU" label="Russia"></option>
+                                                    </optgroup>
+                                                    <optgroup label="Eurasia">
+                                                        <option value="PK" label="Pakistan"></option>
+                                                        <option value="PL" label="Poland"></option>
+                                                        <option selected value="RU" label="Russia"></option>
+                                                    </optgroup>
+                                                    <optgroup label="North America">
+                                                        <option value="US" label="USA"></option>
+                                                        <option value="CA" label="Canada"></option>
+                                                    </optgroup>
+                                                    <optgroup label="South America">
+                                                        <option value="AR" label="Argentina"></option>
+                                                        <option value="PE" label="Peru"></option>
+                                                    </optgroup>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sex:</td>
+                                            <td>
+                                                <input id="male" type="radio" name="sex" value="Male">
+                                                <label for="male">Male</label>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                                <input id="female" type="radio" name="sex" value="Female" checked>
+                                                <label for="female">Female</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="age">Age:</label>
+                                            <td>
+                                                <input id="age" name="age" type="text">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="address">Address:</label>
+                                            <td>
+                                                <textarea id="address" name="address" rows="5" cols="20">
+                                                </textarea>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                <li>
+                                    <p><b>Additional information</b></p>
+                                    <table width="100%">
+                                        <col width="45%">
+                                        <col width="55%">
+                                        
+                                        <tr>
+                                            <td>
+                                                <label for="photo">Photo:</label>
+                                            </td>
+                                            <td>
+                                                <input id="photo" name="photo" type="file">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <br>
+                                                <input id="spam" type="checkbox" name="spam" value="spam">
+                                                <label for="spam">
+                                                    I agree to receive tons of spam every day on 
+                                                    my email (obligatory)
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <br>
+                                                <input id="insecurity" type="checkbox" name="insecurity" value="insecurity">
+                                                <label for="insecurity">
+                                                    I agree my personal data to be treated as usual, i.e. transmitted over insecure
+                                                    channel, open password storing (obligatory, for sure)
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </li>
+                            </ol>
+                            <table width="100%">
+                                <col width="35%">
+                                <col width="65%">
+                                <tr>
+                                    <td></td>
+                                    <td>
+                                        <input type="submit" value="Register">
+                                        <input type="reset" value="Clear form">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
