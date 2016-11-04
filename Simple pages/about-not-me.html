@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon" sizes="16x16">
+        <link rel="license" href="http://creativecommons.org/licenses/by/2.0/">
+        <link rel="stylesheet" href="about-not-me.css">
+        <title>About not me - Dmitrii Nikitenko</title>
+    </head>
+    <body>
+        <article itemscope itemtype="https://schema.org/Person">
+            <header>
+                <h1>
+                    A page about some rough viking
+                </h1>
+            </header>
+
+            <!-- Since width attribute is obsolete for tables and colgroups, I obey Validator and start use CSS -->
+            <!-- Validated with https://search.google.com/structured-data/testing-tool -->
+            <section>
+                <img alt="Some northern guy" title="Some northern guy" width="320" height="240" itemprop="image"
+                    src="https://pixabay.com/static/uploads/photo/2012/04/14/13/14/viking-33877_960_720.png">
+            </section>
+            
+            <!-- Let's give more info to crowlers - adding microdata. The Universe has to be aware about Asmund! -->
+            <section>
+                <p>
+                    <b>Name: </b>
+                    <span itemprop="givenName">Asmund</span>
+                    <span itemprop="familyName">Metallum</span>
+                </p>
+                <div itemprop="description">
+                    <p>
+                        <b>Main activities: </b>conquering new lands, destroying enemies
+                    </p>
+                    <p>
+                        <b>Hobbies: </b>front-end development
+                    </p>
+                    <p>
+                        <b>Favorite quotes:</b>
+                    </p>
+                    <ul>
+                        <li><q>Do or die</q></li>
+                        <li><q>He who lives without a discipline dies without honor</q></li>
+                        <li><q>We don't just build websites, we build websites that SELLS</q></li>
+                    </ul>
+                </div>
+            </section>
+
+            <div class="clear"></div>
+
+            <a href="https://pixabay.com/static/uploads/photo/2012/04/14/13/14/viking-33877_960_720.png">
+                Image source
+            </a>
+        </article>
+        <footer>
+            <hr>
+            <p>Copyleft 2016 - Dmitrii Nikitenko. All wrongs reserved</p>
+        </footer>
+    </body>
+</html>
