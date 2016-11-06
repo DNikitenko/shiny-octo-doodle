@@ -1,0 +1,19 @@
+article {
+    width: 80%;
+}
+
+body {
+    padding: 0 20px;
+}
+
+.left {
+    float: left;
+}
+
+.book-info {
+    margin-left: 20px;
+}
+
+.clear {
+    clear: both;
+}
