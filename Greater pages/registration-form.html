@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="../favicon.ico" type="image/x-icon" sizes="16x16">
+        <link rel="license" href="http://creativecommons.org/licenses/by/2.0/">
+        <link rel="stylesheet" href="registration-form.css">
+        <title>Registration form - Dmitrii Nikitenko</title>
+    </head>
+    <body>
+        <header>
+            <h2>Mega registration form - we wanna know EVERYTHING!!!</h2>
+        </header>
+        <form method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Be super - join us!</legend>
+                <ol>
+                    <li>
+                        <p><b>Registration info</b></p>
+                        <div class="registration-row">
+                            <label class="item-name" for="login" accesskey="l">Login: *</label>
+                            <input id="login" type="text" name="login" required autofocus>
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="password" accesskey="p">Password: *</label>
+                            <input id="password" type="password" name="password" required>
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="confirmPassword">Confirm password: *</label>
+                            <input id="confirmPassword" type="password" name="confirmPassword" required>
+                        </div>
+                    </li>
+                    <li>
+                        <p><b>Personal information</b></p>
+                        <div class="registration-row">
+                            <label class="item-name" for="email" accesskey="e">Email: *</label>
+                            <input id="email" type="email" name="email" placeholder="ex.: cannibal@corpse.mu" required>
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="dob" accesskey="d">Date of birth: *</label>
+                            <input id="dob" type="date" name="dob" required>
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="phone">Phone: </label>
+                            <input id="phone" type="tel" name="phone" placeholder="ex.: +48 000-000-000">
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="website">Website: </label>
+                            <input id="website" type="url" name="website" placeholder="http://mywebsite.com/">
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="country" accesskey="c">Country:</label>
+                            <select id="country" name="country">
+                                <optgroup label="Africa">
+                                    <option value="AL" label="Algeria"></option>
+                                    <option value="UG" label="Uganda"></option>
+                                </optgroup>
+                                <optgroup label="Antarctica" disabled>
+                                    <option value="" label="There're no countries!"></option>
+                                </optgroup>
+                                <optgroup label="Australia">
+                                    <option value="AU" label="Australia"></option>
+                                    <option value="ID" label="Indonesia"></option>
+                                </optgroup>
+                                <optgroup label="Eurasia">
+                                    <option value="HU" label="Hungary"></option>
+                                    <option value="PK" label="Pakistan"></option>
+                                    <option value="PL" label="Poland"></option>
+                                    <option selected value="RU" label="Russia"></option>
+                                    <option value="UA" label="Ukraine"></option>
+                                </optgroup>
+                                <optgroup label="North America">
+                                    <option value="US" label="USA"></option>
+                                    <option value="CA" label="Canada"></option>
+                                </optgroup>
+                                <optgroup label="South America">
+                                    <option value="AR" label="Argentina"></option>
+                                    <option value="PE" label="Peru"></option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name">Sex:</label>
+                            
+                            <div class="inline-container">
+                                <span class="left">
+                                    <input id="male" type="radio" name="sex" value="Male">
+                                    <label for="male">Male</label>
+                                </span>
+                                <span class="right">
+                                    <input id="female" type="radio" name="sex" value="Female" checked>
+                                    <label for="female">Female</label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="age">Age:</label>
+                            <input id="age" name="age" type="number" min="0" max="200">
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="address">Address:</label>
+                            <textarea id="address" name="address" rows="5" cols="20">
+                            </textarea>
+                        </div>
+                    </li>
+                    <li>
+                        <p><b>Additional information</b></p>
+                        <div class="registration-row">
+                            <label class="item-name" for="photo">Photo:</label>
+                            <input id="photo" name="photo" type="file">
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="color">Favourite color:</label>
+                            <input id="color" name="color" type="color">
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="wakeup-time">Time of waking up:</label>
+                            <input id="wakeup-time" name="wakeup-time" type="time">
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="bp-measure-datetime">Blood pressure last measured:</label>
+                            <input id="bp-measure-datetime" name="bp-measure-datetime" type="datetime-local">
+                        </div>
+                        <div class="registration-row">
+                            <label class="item-name" for="mark">Your mark for this form:</label>
+                            <input id="mark" name="mark" type="range" min="0" max="10" value="10"
+                                oninput="markOutput.value=mark.value">
+                            <output name="markOutput" for="mark">10</output>
+                        </div>
+                    </li>
+                </ol>
+                <div class="checkbox-block">
+                    <div class="consent-row">
+                        <input id="spam" type="checkbox" name="spam" value="spam">
+                        <label for="spam">
+                            I agree to receive tons of spam every day on 
+                            my email (obligatory)
+                        </label>
+                    </div>
+                    <div class="consent-row">
+                        <input id="insecurity" type="checkbox" name="insecurity" value="insecurity">
+                        <label for="insecurity">
+                            I agree my personal data to be treated as usual, i.e. transmitted over insecure
+                            channel, open password storing (obligatory, for sure)
+                        </label>
+                    </div>
+                </div>
+                <div class="buttons-block">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear form">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

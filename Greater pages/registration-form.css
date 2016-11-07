@@ -1,0 +1,46 @@
+form {
+    width: 600px;
+}
+
+label.item-name {
+    display: inline-block;
+    width: 230px;
+}
+
+.inline-container {
+    display: inline-block;
+    width: 157px;
+}
+
+.registration-row {
+    margin-bottom: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.checkbox-block {
+    margin: 0 35px;
+}
+
+.consent-row {
+    margin-top: 10px;
+}
+
+.buttons-block {
+    margin-top: 20px;
+    text-align: center;
+}
